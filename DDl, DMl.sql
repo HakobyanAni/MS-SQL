@@ -39,7 +39,6 @@ VALUES
 ('Joseph' , 'Smith' , 'msdn.microsoft.com' , NULL),
 ('Kenny' , 'Ortega' , 'msdn.microsoft.com' , +33311223344)
 
-
 SET IDENTITY_INSERT Students ON  -- turn on identity insert ability
 INSERT INTO Students  -- adding rows in db
 (ID, FirstName, LastName, Email, Phone)
