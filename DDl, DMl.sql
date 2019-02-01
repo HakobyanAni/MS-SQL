@@ -16,7 +16,7 @@ CREATE TABLE Students  -- creating db
 	FirstName nvarchar(20),
 	LastName nvarchar (12),
 	Email varchar(20),
-	Phone char(12) 
+	Phone char(12)
 );
 
 ALTER TABLE Students  -- making changes in table Students
