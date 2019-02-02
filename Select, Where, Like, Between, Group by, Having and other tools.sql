@@ -100,7 +100,7 @@ END AS [Report count]
 FROM Company
 
 
-ALTER TABLE Company
+ALTER TABLE Company  -- Editing the table by adding a new column
 ADD [Monthly reports count] nvarchar
 
 ---> IIF  <----------------------------
