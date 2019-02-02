@@ -29,7 +29,6 @@ ALTER TABLE Students  -- making changes in table Students
 DROP COLUMN MiddleName  -- deleting column MiddleName
 
 
-
 -- >> DML << --
 
 --- > INSERT
