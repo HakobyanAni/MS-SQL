@@ -10,7 +10,7 @@ COLLATE Cyrillic_General_CI_AS
 
 USE tempdb  -- use another db
 
-CREATE TABLE Students  -- creating db
+CREATE TABLE Students  -- creating table
 (
 	ID int NOT NULL IDENTITY,
 	FirstName nvarchar(20),
