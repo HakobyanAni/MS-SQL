@@ -6,7 +6,7 @@ SELECT TOP 25 PERCENT * FROM Company  -- Select 25% of rows
 
 --->  ORDER BY  <----------------------------
 SELECT * FROM Company  -- Select all the table
- ORDER BY [Company Name] DESC -- Sorting by company names (descending)
+ORDER BY [Company Name] DESC -- Sorting by company names (descending)
 
 SELECT * FROM Company  -- Select all the table
 ORDER BY [NACE_2 Sector], [NACE_2 Code]  -- Sorting by NACE_2 Sector then by NACE_2 Code
@@ -17,12 +17,12 @@ SELECT TOP 3 [Nace_2 Sector], [Company Name], [Employee count]  FROM Company  --
 ORDER BY [Employee count] DESC -- Sorting  by Employee count (descending)
 
 SELECT TOP 4 WITH TIES [Nace_2 Sector], [Company Name], [Employee count]  FROM Company  -- Select 4 columns
--- WITH TIES includes rows which have the same Employee count valu of the sorted table  
+-- WITH TIES includes rows which have the same Employee count valu as the last row from the sorted table  
 ORDER BY [Employee count] DESC -- Sorting  by Employee count (descending)
 
 
  --->  SELECT ... INTO  <----------------------------
- SELECT [Company Name], [Employee count]  -- Select 2 columns from table Company
+ SELECT [Company Name], [Employee count]  -- Select 2 columns from the table Company
  INTO CompEmp  -- and put them into the table CompEmp (just has been created)
  FROM Company
 
@@ -47,7 +47,7 @@ WHERE [Employee count] = 100 OR [Nace_2 Sector]  = 'B'
 /*1)*/  SELECT * FROM Company 
         WHERE [Employee count] = 100 OR [Employee count] = 250
 
-/*2)*/  SELECT * FROM Company  -- Select all columns where Employee count = 100 or 250
+/*2)*/  SELECT * FROM Company  
         WHERE [Employee count] IN(100, 250)
 
 
@@ -105,7 +105,7 @@ ADD [Monthly reports count] nvarchar
 
 ---> IIF  <----------------------------
 UPDATE Company
-SET [Monthly reports count] = IIF([Employee count] <= 100, 0, 1)  -- Creating new column: Monthly reports count
+SET [Monthly reports count] = IIF([Employee count] <= 100, 0, 1)  --Giving values to the new column: Monthly reports count
 
 SELECT [Nace_2 Code], [Company Name], [Employee count],
 IIF([Employee count] <= 100, 'small', 'middle or big') AS [Company type]
