@@ -57,7 +57,7 @@ CREATE TABLE StudentsPhones  -- creating another the table
 (
     ID int,
     LName nvarchar(20),
-	PhoneNumber char(20)
+    PhoneNumber char(20)
 );
 
 INSERT StudentsPhones  -- adding columns from the table Students to the table StudentsPhone
