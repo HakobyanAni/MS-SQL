@@ -16,7 +16,7 @@ Here you can find **Basic Concepts** of **T-SQL**, and a lot of query examples.
 
 * [Practice 1](https://github.com/HakobyanAni/MS-SQL/blob/master/4.%20Task%20-%20Freestyle%20table.sql)
 * [Practice 2](https://github.com/HakobyanAni/MS-SQL/blob/master/6.%20Continuation%20of%20task%204..sql)
-* [JOIN](https://github.com/HakobyanAni/MS-SQL/blob/master/7.%20JOIN.sql)
+* [Join](https://github.com/HakobyanAni/MS-SQL/blob/master/7.%20JOIN.sql)
 
 
 
