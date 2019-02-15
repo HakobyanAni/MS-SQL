@@ -88,10 +88,5 @@ SELECT * FROM Companies c
 JOIN Activity a
 ON a.[NACE_2 code of activity] > 30.00
 
----------------- >>>  SELF JOIN  <<< ----------------
------- In case of Self Join we must create alias of table
-SELECT * FROM [Activity] a1 
-JOIN [Activity] a2
-ON a1.ID > a2.ID
  
--- Theta, Cross and Self Joins is logicaly wrong for this example, these are only to show the syntax.
+-- Theta and Cross Joins are logicaly wrong for this example, these are only to show the syntax.
