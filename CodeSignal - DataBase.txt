@@ -1,0 +1,38 @@
+------>  Database solutions from codesignal.com  <------ 
+
+-- 1. --
+BEGIN
+	SELECT project_name, team_lead, income FROM Projects;
+END
+
+
+-- 2. --
+BEGIN
+    SELECT name, continent, population FROM countries
+    WHERE continent = 'Africa';
+END
+
+
+-- 3. --
+BEGIN
+    SELECT id, scholarship/12 AS scholarship
+    FROM scholarships;
+END
+
+
+-- 4. --
+BEGIN
+    SELECT DISTINCT projectLog.name
+    FROM projectLog 
+    Order by name;
+END
+
+
+-- 5. --
+    SELECT email
+    FROM users
+    WHERE role not in ("admin", "premium")
+    ORDER BY email;	
+
+
+-- 6. --
