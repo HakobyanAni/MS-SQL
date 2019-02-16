@@ -36,3 +36,33 @@ END
 
 
 -- 6. --
+BEGIN
+    SELECT * FROM results 
+    ORDER BY wins;
+END
+
+
+-- 7. --
+BEEGIN
+    SELECT name FROM Products
+    ORDER BY price * quantity DESC, name 
+    LIMIT 1;
+END
+
+
+-- 8. --
+BEGIN
+    SELECT name FROM leaderboard
+    ORDER BY score DESC
+    LIMIT 3, 5;
+END 
+
+
+-- 9. --
+BEGIN
+    SELECT Name, ID FROM Grades
+    WHERE Final / 100 > ((Midterm1 + Midterm2 + Final) / 400) AND 
+          Final / 100 > ((Midterm1 + Midterm2) / 200)
+    ORDER BY LEFT(Name, 3), ID;
+END
+
