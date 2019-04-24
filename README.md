@@ -1,7 +1,7 @@
 # MS-SQL <img src="https://user-images.githubusercontent.com/45730967/52536572-c6213780-2d75-11e9-9802-0a6e0b319af6.png" align="right" width="140px" height="120px" />
 Here you can find *Basic Concepts* of **T-SQL**, and a lot of query examples.
 <br>
-**It can also be a learning path for those who just starting to lear MS SQL**
+**It can also be a learning path for those who just starting to learn MS SQL**
 
 
 ### [**T-SQL**](https://en.wikipedia.org/wiki/Transact-SQL)
