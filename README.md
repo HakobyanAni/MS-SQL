@@ -25,4 +25,4 @@ Here you can find *Basic Concepts* of **T-SQL**, and a lot of query examples.
 <br>
 <br>
 
-> Projects written on SQL Server Managment Studio 17.9.1.
+> Projects are written on SQL Server Managment Studio 17.9.1.
